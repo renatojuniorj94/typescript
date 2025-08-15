@@ -14,3 +14,13 @@ let bizarro = undefined;
 let nada = null;
 //Há também 2 tipos primitivos menos comuns, encontrados em versões mais recentes do JavaScript e TypeScript - bigint e symbol
 /*Ao criar uma variável, há duas maneiras principais de o TypeScript atribuir um tipo:
+
+- Explícito
+- Implícito
+*/
+//Tipo explícito - Quando você atribui o tipo de dado na declaração
+let nacionalidade = 'Brasileiro';
+//nacionalidade = 'brasileiro' > TypeScript aponta erro.
+//Tipo implícito - Quando o TypeScript irá "adivinhar" (inferir) o tipo, com base no valor atribuído.
+let profissao = 'Programador';
+//profissao = 100 > TypeScript aponta erro por ter atribuído uma string anteriormente
