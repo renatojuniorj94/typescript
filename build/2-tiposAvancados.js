@@ -17,3 +17,11 @@ let valor = 100;
 valor = "Agora é texto";
 let converte = valor;
 console.log(converte.length);
+/* never (nunca) - Lança um erro sempre que ele é definido.
+never é raramente usado, seu uso primário é em genéricos avançados. */
+//let b: never = true;
+//array - TypeScript tem uma sintaxe especifíca para matrizes.
+const names = [];
+names.push("Renato"); //sem erro
+//names.push(3); > erro
+/* Paramos a aula com 8:40 */ 
