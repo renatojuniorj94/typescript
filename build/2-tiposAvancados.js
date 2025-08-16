@@ -11,3 +11,7 @@ teste = "texto;";
 /* ALERTA: any pode ser uma maneira útil de evitar erros, uma vez que desabilita a verificação de tipos, mas o TypeScript não será capaz de fornecer segurança de tipo e ferramentas que dependem em dados de tipo, como preenchimento automático, não funcionarão.
 Lembre-se, deve ser evitado a "qualquer" custo...
 */
+/* unknown (desconhecido) - é uma alternativa semelhante ao any, só que mais segura.
+Esse tipo exige verificações ou conversões explícitas para garantir a segurança de tipo durante as operações. */
+let valor = 100;
+valor = "Agora é texto";
