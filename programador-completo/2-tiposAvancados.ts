@@ -18,3 +18,6 @@ Lembre-se, deve ser evitado a "qualquer" custo...
 Esse tipo exige verificações ou conversões explícitas para garantir a segurança de tipo durante as operações. */
 let valor: unknown = 100;
 valor = "Agora é texto";
+
+let converte = valor as string;
+console.log(converte.length)
