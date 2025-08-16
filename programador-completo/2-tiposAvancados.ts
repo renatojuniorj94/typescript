@@ -5,3 +5,11 @@ let myVariable: string | number; //pode ser uma string ou um número
 myVariable = "Hello";
 myVariable = 42;
 //myVariable = true > erro
+
+//any (qualquer) - É um tipo que desabilita a verificação de tipos e permite efetivamente que todos os tipos sejam usados
+let teste: any = 100;
+teste = "texto;"
+
+/* ALERTA: any pode ser uma maneira útil de evitar erros, uma vez que desabilita a verificação de tipos, mas o TypeScript não será capaz de fornecer segurança de tipo e ferramentas que dependem em dados de tipo, como preenchimento automático, não funcionarão.
+Lembre-se, deve ser evitado a "qualquer" custo...
+*/
