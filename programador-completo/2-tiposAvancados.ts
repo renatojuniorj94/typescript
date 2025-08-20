@@ -40,3 +40,10 @@ const numbers = [1, 2, 3]; // Infere tipo number[]
 numbers.push(4); // Sem erro
 //numbers.push("5"); > Erro
 let y: number = numbers[0]; // Sem erro, pegou valor 1
+
+/* tuplas - Uma tupla é um array tipado com um comprimento e tipos pré-definidos para cada índice. As tuplas são ótimas porque permitem que cada elemento na matriz seja um tipo conhecido de valor. */
+let nossaTupla: [number, boolean, string];
+nossaTupla = [5, false, 'TypeScript'];
+
+//Exemplo com erro:
+//nossaTupla = [false, 'JavaScript', 5];
