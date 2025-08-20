@@ -24,4 +24,6 @@ never é raramente usado, seu uso primário é em genéricos avançados. */
 const names = [];
 names.push("Renato"); //sem erro
 //names.push(3); > erro
-/* Paramos a aula com 8:40 */ 
+/* A palavra chave 'readonly' (somente leitura) impede que matrizes sejam alteradas. */
+const nomes = ['Renato', 'Junior'];
+//nomes.push("Rodrigues"); > Erro
