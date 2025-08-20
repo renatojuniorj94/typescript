@@ -61,3 +61,16 @@ const tuplaReadonly: readonly[number, boolean, string] = [13, true, 'Março'];
 //Lançando erro
 //tuplaReadonly.push('Fevereiro')
 
+//Objetos
+const carro: {marca: string, modelo: string, ano: number} = {
+    marca: "Toyota",
+    modelo: "Etios",
+    ano: 2019
+}
+
+//O TypeScript pode inferir os tipos de propriedades com base em seus valores
+const carro2 = {
+    marca: "Toyota"
+};
+carro2.marca = "BMW"; // Nenhum erro, pois continua sendo uma string.
+//carro2.marca = 6 > Erro, porque tentamos atribuir um 'number' a uma 'string'
