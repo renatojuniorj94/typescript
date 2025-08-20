@@ -37,3 +37,13 @@ let nossaTupla;
 nossaTupla = [5, false, 'TypeScript'];
 //Exemplo com erro:
 //nossaTupla = [false, 'JavaScript', 5];
+/* Uma boa prática é fazer sua tupla sempre readonly. Por que? Por que as tuplas só tem tipos fortemente definidos para os valores iniciais. */
+//Tupla com os tipos de dados definidos
+let outTuple;
+outTuple = [5, false, 'Brasil'];
+//Sem 'readonly' perdemos o controle de novas inserções na tupla
+outTuple.push('Rio de Janeiro');
+//Com readonly
+const tuplaReadonly = [13, true, 'Março'];
+//Lançando erro
+//tuplaReadonly.push('Fevereiro')
