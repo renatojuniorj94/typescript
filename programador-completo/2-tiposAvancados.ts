@@ -74,3 +74,10 @@ const carro2 = {
 };
 carro2.marca = "BMW"; // Nenhum erro, pois continua sendo uma string.
 //carro2.marca = 6 > Erro, porque tentamos atribuir um 'number' a uma 'string'
+
+/* No TypeScript um objeto pode ter propriedades opcionais. Propriedades opcionais são propriedades que não precisam ser definidas na definição do objeto. Elas podem ser usadas depois ou não, são opcionais. */
+const celular: {marca: string, modelo?: number} = {
+    marca: "Xiaomi",
+};
+celular.modelo = 9
+//Nesse caso, não especificamos o modelo no momentos em que o objeto foi criado.
