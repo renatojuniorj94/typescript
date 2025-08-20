@@ -27,3 +27,8 @@ names.push("Renato"); //sem erro
 /* A palavra chave 'readonly' (somente leitura) impede que matrizes sejam alteradas. */
 const nomes = ['Renato', 'Junior'];
 //nomes.push("Rodrigues"); > Erro
+/* Inferência de tipo - TypeScript pode inferir o tipo de uma matriz se ela tiver valores. */
+const numbers = [1, 2, 3]; // Infere tipo number[]
+numbers.push(4); // Sem erro
+//numbers.push("5"); > Erro
+let y = numbers[0]; // Sem erro, pegou valor 1
