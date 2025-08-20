@@ -81,3 +81,7 @@ const celular: {marca: string, modelo?: number} = {
 };
 celular.modelo = 9
 //Nesse caso, não especificamos o modelo no momentos em que o objeto foi criado.
+
+//Assinaturas de índice - As assinaturas de índice podem ser usadas para objetos sem uma lista definida de propriedades.
+const nomeIdade: { [index: string]: number } = {};
+nomeIdade["Renato"] = 31;
