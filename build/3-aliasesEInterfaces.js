@@ -15,3 +15,15 @@ const laFerrari = {
     marca: 'Ferrari',
     modelo: 'La Ferrari'
 };
+;
+//Exemplo de uso
+const novoItem = {
+    altura: 20,
+    largura: 10
+};
+//Uso
+const outroItem = {
+    altura: 20,
+    largura: 10,
+    cor: 'azul'
+};

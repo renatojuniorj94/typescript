@@ -7,6 +7,7 @@ As interfaces são a mesma coisa que os aliases, exceto que só se aplicam ao ti
 */
 
 //Aliases (Criando nossos tipos personalizados)
+//OBS: Em 'type', a primeira letra deve ser maiuscula, como boa pratica de desenvolvimento.
 type AnoVeiculo = number;
 type MarcaVeiculo = string;
 type ModeloVeiculo = string;
@@ -25,3 +26,27 @@ const laFerrari: Carro = {
     marca: 'Ferrari',
     modelo: 'La Ferrari'
 };
+
+//Interfaces
+interface Retangulo {
+    altura: number,
+    largura: number
+};
+
+//Exemplo de uso
+const novoItem: Retangulo = {
+    altura: 20,
+    largura: 10
+}
+
+//Estendendo interface - Herdar propriedades do original e adicionar algo.
+interface RetanguloColorido extends Retangulo {
+    cor: string
+}
+
+//Uso
+const outroItem: RetanguloColorido = {
+    altura:20,
+    largura:10,
+    cor: 'azul'
+}
