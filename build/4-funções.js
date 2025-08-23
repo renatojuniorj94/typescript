@@ -26,3 +26,8 @@ function saudacao(name = "Renato") {
 }
 saudacao(); // Olá Renato
 saudacao("Mariza"); // Olá Mariza
+//Parâmetros nomeados (Named Parameters)
+function hello({ nome, idade }) {
+    console.log(`Hello, ${nome}! Você tem ${idade} anos.`);
+}
+hello({ nome: "Renato", idade: 31 }); // Hello, Renato! Você tem 31 anos.
