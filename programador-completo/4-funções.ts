@@ -23,3 +23,12 @@ function multiplicacao(a: number, b:number): number{
 function add(a: number, b: number, c?: number): number {
     return a + b + (c || 0);
 }
+
+//Parâmetros com valores iniciais padrão
+function saudacao(name: string = "Renato"): void {
+    console.log(`Olá ${name}`);
+    
+}
+
+saudacao() // Olá Renato
+saudacao("Mariza") // Olá Mariza

@@ -20,3 +20,9 @@ function multiplicacao(a, b) {
 function add(a, b, c) {
     return a + b + (c || 0);
 }
+//Parâmetros com valores iniciais padrão
+function saudacao(name = "Renato") {
+    console.log(`Olá ${name}`);
+}
+saudacao(); // Olá Renato
+saudacao("Mariza"); // Olá Mariza
