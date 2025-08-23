@@ -7,3 +7,10 @@ TypeScript tem uma sintaxe específica para digitar parâmetros de função e va
 function getTime(): number {
     return new Date().getTime();
 }
+
+//Void - Quando a função não tem retorno
+function printHello(): void {
+    console.log("Hello!");
+}
+
+//
