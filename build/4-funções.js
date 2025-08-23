@@ -11,4 +11,7 @@ function getTime() {
 function printHello() {
     console.log("Hello!");
 }
-//
+//Tipos de parâmetros de função
+function multiplicacao(a, b) {
+    return a * b;
+}

@@ -13,4 +13,7 @@ function printHello(): void {
     console.log("Hello!");
 }
 
-//
+//Tipos de parâmetros de função
+function multiplicacao(a: number, b:number): number{
+    return a * b;
+}
