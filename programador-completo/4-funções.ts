@@ -17,3 +17,9 @@ function printHello(): void {
 function multiplicacao(a: number, b:number): number{
     return a * b;
 }
+
+//Parametros opcionais
+//O operador "?" aqui marca que o parametro "c" é opcional
+function add(a: number, b: number, c?: number): number {
+    return a + b + (c || 0);
+}
